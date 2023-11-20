@@ -22,7 +22,41 @@
 
 .card
 {
-    z-index: 9999;
+    z-index: 999;
     position: relative;
     margin-top: 250px;
+}
+
+.animation
+{
+    animation: fade linear both;
+}
+
+.homecarousel
+{
+    margin-top: 150px;
+}
+
+.homecarouseltextheader
+{
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.navbarlogo
+{
+    z-index: 9999;
+}
+
+@keyframes fade
+{
+    from
+    {
+        opacity: 0;
+    }
+    to
+    {
+        opacity: 1;
+    }
 }

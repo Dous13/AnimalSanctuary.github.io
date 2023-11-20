@@ -4,12 +4,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TheLaundryScience</title>
+    <title>DAS | Home</title>
     <link href="css/main.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
     <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
-    <link rel="shortcut icon" type="image/x-icon" href="favicon.ico?">
-    <link href="/css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="css/style.css" rel="stylesheet">
 </head>
 <body class="bg-light">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top">
@@ -20,7 +20,7 @@
             </button>
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a href="#" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" style="text-decoration: underline;">Home</a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-white">About</a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-white">Adopt</a></li>
                     <li class="nav-item"><a href="#" class="nav-link text-white">Contact</a></li>
@@ -33,57 +33,50 @@
     <section class="backgroundphoto text-light p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="homeheader">
         <div class="container">
             <p class="text-white headertext">Find Your New Bestfriend</p>
-            <div class="d-sm-flex">
+            <div class="d-sm-flex d-sm-none d-md-block d-none d-sm-block">
                 <div class="container">
                     <div class="row text-center g-4">
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card bg-white text-dark">
                                 <div class="card-body text-center">
                                     <div class="h1 mb-3">
-                                        <i class="bi bi-truck"></i>
+                                        <img src="images/paw.png" alt="paw" height="150px" width="150px">
                                     </div>
-                                    <h3 class="card-title mb-3">
-                                        Fast
-                                    </h3>
-                                    <p class="card-text">
-                                        We can pick it up, or you can drop it off!
-                                        You choose we provide for you, our team does it fast so you can have it Easy.
-                                    </p>
-                                    <a href="Services.html" class="btn btn-primary text-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Services">See Services</a>
+                                    <h3 class="card-title mb-3"><a href="#" style="text-decoration: none;">Our Rescues</a></h3>
+                                    <p class="card-text">All Our Rescues</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card bg-white text-dark">
                                 <div class="card-body text-center">
                                     <div class="h1 mb-3">
-                                        <i class="bi bi-phone"></i>
+                                        <img src="images/doghouse.png" alt="Doghouse" height="150px" width="150px">
                                     </div>
-                                    <h3 class="card-title mb-3">
-                                        Easy
-                                    </h3>
-                                    <p class="card-text">
-                                        Book from our website via email or call us through our mobile.
-                                        We are happy to serve you and give you the best.
-                                    </p>
-                                    <a href="#" class="btn btn-primary text-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Contact">Contact Us</a>
+                                    <h3 class="card-title mb-3"><a href="#" style="text-decoration: none;">Adopt</a></h3>
+                                    <p class="card-text">Provide a Furr-ever Home</p>
                                 </div>
                             </div>
                         </div>
                         <div class="col-md">
-                            <div class="card bg-dark text-light">
+                            <div class="card bg-white text-dark">
                                 <div class="card-body text-center">
                                     <div class="h1 mb-3">
-                                        <i class="bi bi-cash-stack"></i>
+                                        <img src="images/medal.png" alt="medal" height="150px" width="150px">
                                     </div>
-                                    <h3 class="card-title mb-3">
-                                        Affordable
-                                    </h3>
-                                    <p class="card-text">
-                                        Prices are affordable and we have deals as well.
-                                        Do not miss this chance to keep your laundry clean and fresh.
-                                    </p>
-                                    <a href="prices.html" class="btn btn-primary text-light" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Prices">See Prices</a>
+                                    <h3 class="card-title mb-3"><a href="#">Sponsor</a></h3>
+                                    <p class="card-text">Support a Rescue</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md">
+                            <div class="card bg-white text-dark">
+                                <div class="card-body text-center">
+                                    <div class="h1 mb-3">
+                                        <a href=""><img src="images/bone.png" alt="bone" height="150px" width="150px"></a>
+                                    </div>
+                                    <h3 class="card-title mb-3"><a href="#">Donate</a></h3>
+                                    <p class="card-text">Support Our Work</p>
                                 </div>
                             </div>
                         </div>
@@ -92,79 +85,189 @@
             </div>
         </div>
     </section>
-    
-    <section class="p-5" id="homecards">
-        
+
+    <section id="RescueCarousel" class="p-5 homecarousel">
+        <h3 class="homecarouseltextheader bg-dark p-3 rounded text-white">Recent Rescues</h3>
+        <div id="carouselIndicators" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+              <button type="button" data-bs-target="#carouselIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+            </div>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="images/dogs/alix.png" class="d-block w-100 rounded" alt="alix" height="800px" width="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dogs/brownie.png" class="d-block w-100 rounded" alt="brownie" height="800px" width="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dogs/charlie.png" class="d-block w-100 rounded" alt="charlie" height="800px" width="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dogs/delfin.png" class="d-block w-100 rounded" alt="delfin" height="800px" width="600px">
+              </div>
+              <div class="carousel-item">
+                <img src="images/dogs/elenor.png" class="d-block w-100 rounded" alt="elenor" height="800px" width="600px">
+              </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselIndicators" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselIndicators" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
     </section>
 
-    <section id="learn" class="p-5 ">
+    <section id="service" class="p-5 bg-dark text-white">
         <div class="container">
             <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <img src="Manwashing.png" class="img-fluid" alt="Guy with washing machine" title="Guy with washing machine">
-                </div>
                 <div class="col-md p-5">
-                    <div class="h2">Why stress youself when we can do it for you?</div>
+                    <div class="h2">Why Adopt?</div>
                     <p class="lead">
-                        We offer you a high quality service at an affordable price,
-                        owned by a small family we make your weekend a free time you instead
-                        of you doing laundry.
+                        Adopting dogs or cats offers numerous benefits, enhancing both your life and theirs. 
+                        These loyal companions provide unconditional love, companionship, and emotional support, promoting mental well-being. 
+                        The act of adopting also contributes to reducing the population of homeless animals and alleviating the strain on overcrowded shelters. 
+                        Dogs foster an active lifestyle through walks and play, promoting physical health. 
+                        Cats, known for their independent nature, offer low-maintenance companionship, making them suitable for various lifestyles. 
+                        The bond formed with a adopted pet creates a sense of responsibility and purpose. 
+                        Ultimately, embracing the joy and fulfillment of adopting a dog or cat not only enriches your life but also saves theirs.
                     </p>
+                </div>
+                <div class="col-md">
+                    <img src="images/dogguy.png" class="img-fluid" alt="Guy delivering" title="Guy delivering">
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="service" class="p-5 bg-dark text-light">
+    <section class="p-5 p-lg-0 pt-lg-0 text-center text-sm-start" id="homeheader">
         <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md p-5">
-                    <div class="h2">Best Service in Town!</div>
-                    <p class="lead">
-                        We ensure that we serve you at our utmost highest service available,
-                        No need to worry about your belongings and you clothes we got you covered!
-                    </p>
+            <div class="d-sm-flex align-items-center justify-content-between">
+                <div>
+                    <div class="row">
+                      <div class="card border border-dark" style="width: 18rem; margin-right: 50px;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark" style="text-align:left;">Why Choose Us?</h5>
+                            <p class="card-text text-dark">Choose Necesito's Real Estate & Bookkeeping for comprehensive solutions that seamlessly integrate expert real estate services with meticulous bookkeeping, providing you with peace of mind and maximizing your financial potential.</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                      <div class="card mb-5 border border-dark" style="width: 18rem;">
+                        <div class="card-body">
+                            <h5 class="card-title text-dark" style="text-align:left; margin-right: 50px;">About Us</h5>
+                            <p class="card-text text-dark">Necesito's Real Estate & Bookkeeping specializes in selling prime land in Dumaguete City, offering lucrative investment opportunities. Our professional bookkeeping services ensure streamlined financial management for businesses, helping them thrive and grow.</p>
+                        </div>
+                      </div>
+                    </div>
                 </div>
-                <div class="col-md">
-                    <img src="delivery.png" class="img-fluid" alt="Guy delivering" title="Guy delivering">
-                </div>
+                <img class="picbody rounded-5 img-fluid w-50 d-none d-sm-block mt-5 bg-dark p-3" src="images/goldenret.png" alt="dog"/>
+                <img class="picbody1 rounded-5 img-fluid w-50 d-none d-sm-block bg-dark p-3" style="margin-left: 5px;" src="images/cat.png" alt="cat"/>
             </div>
         </div>
-    </section>
+      </section>
 
-    <section id="service" class="p-5">
-        <div class="container">
-            <div class="row align-items-center justify-content-between">
-                <div class="col-md">
-                    <video class="ratio ratio-16x9" src="ccs8.mp4" width="640px" height="480px" controls></video>
-                </div>
-                <div class="col-md p-5">
-                    <div class="h2">A Small Teaser</div>
-                    <p class="lead">
-                        A small teaser of what we can offer you and what you will recieve,
-                        if you book with us. A safe and clean environment just for you!
-                        A quick and easy transaction without getting out of your chair! So what are you waiting for?
-                    </p>
-                    <a class="mt-3 btn btn btn-outline-dark" href="About3.html" role="button">See Full Page</a>
-                </div>
-            </div>
-        </div>
-    </section>
+    <footer class="bg-primary text-center text-lg-start text-white">
+      <div class="container p-4">
+        <div class="row my-4">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <img src="images/logo.png" height="170" alt="" loading="lazy"/>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
 
-    <footer class="p-5 bg-dark text-light text-center position-relative">
-        <div class="container">
-            <p class="lead">
-                Copyright &copy; 2023 College of Computer Studies Silliman University
-            </p>
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Animals</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Assistance</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Sitemap</a>
+              </li>
+              <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>Cantile-Isugan Rd, Purok Maabi, Abihon</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>0919 074 0320</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>info@dumagueteanimalsanctuary.com</p>
+              </li>
+            </ul>
+          </div>
         </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Copyright &copy; 2023 College of Computer Studies Silliman University
+      </div>
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-        function myFunction() {
-        var element = document.body;
-        element.classList.toggle("dark-mode");
-}
+        function myFunction() 
+        {
+            var element = document.body;
+            element.classList.toggle("dark-mode");
+        }
     </script>
 </body>
 </html>
