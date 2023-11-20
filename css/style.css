@@ -1,0 +1,28 @@
+.backgroundphoto
+{
+    background-image: url('/images/Headerphoto.jpg');
+    width: auto;
+    height: 700px;
+}
+
+.headertext
+{
+    text-align: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 60px;
+    margin-top: 150px;
+}
+
+.navbarlogo
+{
+    height: 50px;
+    width: 70px;
+}
+
+.card
+{
+    z-index: 9999;
+    position: relative;
+    margin-top: 250px;
+}
