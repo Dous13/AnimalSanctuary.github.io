@@ -1,6 +1,6 @@
 .backgroundphoto
 {
-    background-image: url('/images/Headerphoto.jpg');
+    background-image: url('images/Headerphoto.jpg');
     width: auto;
     height: 700px;
 }
