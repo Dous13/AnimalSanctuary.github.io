@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DAS | Adopt</title>
+    <link href="css/main.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v2.1.1/mapbox-gl.css" rel="stylesheet"/>
+    <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark py-3 sticky-top">
+        <div class="container">
+            <a href="#" class="navbar-brand"><img class="navbarlogo" src="images/logo.png" alt="">Dumaguete Animal Sanctuary</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navmenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navmenu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a href="index.html" class="nav-link text-white">Home</a></li>
+                    <li class="nav-item"><a href="about.html" class="nav-link text-white" >About</a></li>
+                    <li class="nav-item"><a href="#" class="nav-link text-white" style="text-decoration: underline;">Adopt</a></li>
+                    <li class="nav-item"><a href="contact.html" class="nav-link text-white">Contact</a></li>
+                    <li class="nav-item"><a href="faq.html" class="nav-link text-white">FAQ</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+      <div class="col-12 text-center mt-4">
+        <label>Filter by Attributes: </label>
+        <input type="checkbox" class="personality" value="friendly"> Friendly
+        <input type="checkbox" class="personality" value="energetic"> Energetic
+        <input type="checkbox" class="personality" value="shy"> Shy
+        <input type="checkbox" class="personality" value="white"> White
+        <input type="checkbox" class="personality" value="brown"> Brown
+        <input type="checkbox" class="personality" value="black"> Black
+        <input type="checkbox" class="personality" value="bold"> Bold
+        <input type="checkbox" class="personality" value="curious"> Curious
+        <input type="checkbox" class="personality" value="gentle"> Gentle
+        <input type="checkbox" class="personality" value="quiet"> Quiet
+        <input type="checkbox" class="personality" value="playful"> Playful
+        <input type="checkbox" class="personality" value="active"> Active
+        <input type="checkbox" class="personality" value="sweet"> Sweet
+        <input type="checkbox" class="personality" value="stripped"> Stripped
+      </div>
+      <button id="filterButton" class="btn btn-primary" type="button">Filter</button>
+    </div>
+
+      <div class="container mt-0 mb-5">
+        <div class="row text-center g-3">
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Alice.png" class="card-img-top p-4" alt="Alice" data-attributes="friendly white shy">
+                <div class="card-body">
+                  <p class="card-text">Alice</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Alix.png" class="card-img-top p-4" alt="Alix" data-attributes="energetic white sweet">
+                <div class="card-body">
+                  <p class="card-text">Alix</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Amelia.png" class="card-img-top p-4" alt="Amelia" data-attributes="shy brown bold">
+                <div class="card-body">
+                  <p class="card-text">Amelia</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Annie.png" class="card-img-top p-4" alt="Annie" data-attributes="shy black sweet">
+                <div class="card-body">
+                  <p class="card-text">Annie</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Bailey.png" class="card-img-top p-4" alt="Bailey" data-attributes="shy white curious">
+                <div class="card-body">
+                  <p class="card-text">Bailey</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Beauty.png" class="card-img-top p-4" alt="Beauty" data-attributes="gentle black quiet">
+                <div class="card-body">
+                  <p class="card-text">Beauty</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Bella.png" class="card-img-top p-4" alt="Bella" data-attributes="playful black friendly">
+                <div class="card-body">
+                  <p class="card-text">Bella</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Betty.png" class="card-img-top p-4" alt="Betty" data-attributes="friendly black white active">
+                <div class="card-body">
+                  <p class="card-text">Betty</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Brownie.png" class="card-img-top p-4" alt="Brownie" data-attributes="sweet brown friendly">
+                <div class="card-body">
+                  <p class="card-text">brownie</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Cardo.png" class="card-img-top p-4" alt="Cardo" data-attributes="sweet brown friendly">
+                <div class="card-body">
+                  <p class="card-text">Cardo</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Carson.png" class="card-img-top p-4" alt="Carson" data-attributes="gentle brown friendly">
+                <div class="card-body">
+                  <p class="card-text">Carson</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Charlie.png" class="card-img-top p-4" alt="Charlie" data-attributes="shy brown friendly">
+                <div class="card-body">
+                  <p class="card-text">Charlie</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Cinderella.png" class="card-img-top p-4" alt="Cinderella" data-attributes="gentle brown friendly">
+                <div class="card-body">
+                  <p class="card-text">Cinderella</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Cleo.png" class="card-img-top p-4" alt="Cleo" data-attributes="active brown friendly">
+                <div class="card-body">
+                  <p class="card-text">Cleo</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Daisy.png" class="card-img-top p-4" alt="Daisy" data-attributes="energetic brown friendly">
+                <div class="card-body">
+                  <p class="card-text">Daisy</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Dan.png" class="card-img-top p-4" alt="Dan" data-attributes="gentle white quiet">
+                <div class="card-body">
+                  <p class="card-text">Dan</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Dash.png" class="card-img-top p-4" alt="Dash" data-attributes="curious brown energetic">
+                <div class="card-body">
+                    <p class="card-text">Dash</p>
+                </div>
+            </div>
+        </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Davey.png" class="card-img-top p-4" alt="Davey" data-attributes="curious white gentle">
+                <div class="card-body">
+                  <p class="card-text">Davey</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Dora.png" class="card-img-top p-4" alt="Dora" data-attributes="curious brown shy">
+                <div class="card-body">
+                  <p class="card-text">Dora</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Edith.png" class="card-img-top p-4" alt="Edith" data-attributes="gentle white friendly">
+                <div class="card-body">
+                    <p class="card-text">Edith</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md">
+          <div class="card" style="width: 18rem;">
+              <img src="images/dogs/adopt/Eleanor.png" class="card-img-top p-4" alt="Eleanor" data-attributes="sweet black friendly">
+              <div class="card-body">
+                  <p class="card-text">Eleanor</p>
+              </div>
+          </div>
+      </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Elf.png" class="card-img-top p-4" alt="Elf" data-attributes="sweet white friendly">
+                <div class="card-body">
+                  <p class="card-text">Elf</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Ella.png" class="card-img-top p-4" alt="Ella" data-attributes="curious brown shy">
+                <div class="card-body">
+                  <p class="card-text">Ella</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;"> 
+                <img src="images/dogs/adopt/Freddy.png" class="card-img-top p-4" alt="Freddy" data-attributes="friendly brown stripped shy">
+                <div class="card-body">
+                  <p class="card-text">Freddy</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Fury.png" class="card-img-top p-4" alt="Fury" data-attributes="curious brown sweet">
+                <div class="card-body">
+                  <p class="card-text">Fury</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Ginny.png" class="card-img-top p-4" alt="Ginny" data-attributes="sweet white friendly">
+                <div class="card-body">
+                  <p class="card-text">Ginny</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/harry.png" class="card-img-top p-4" alt="Harry" data-attributes="shy white curious">
+                <div class="card-body">
+                  <p class="card-text">Harry</p>
+                </div>
+              </div>
+          </div>
+          <div class="col-md">
+            <div class="card" style="width: 18rem;">
+                <img src="images/dogs/adopt/Katie.png" class="card-img-top p-4" alt="Katie" data-attributes="sweet white shy">
+                <div class="card-body">
+                  <p class="card-text">Katie</p>
+                </div>
+              </div>
+          </div>
+        </div>
+      </div>
+
+    <footer class="bg-primary text-center text-lg-start text-white">
+      <div class="container p-4">
+        <div class="row my-4">
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <img src="images/logo.png" height="170" alt="" loading="lazy"/>
+  
+            <ul class="list-unstyled d-flex flex-row justify-content-center">
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-facebook-square"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white px-2" href="#!">
+                  <i class="fab fa-instagram"></i>
+                </a>
+              </li>
+              <li>
+                <a class="text-white ps-2" href="#!">
+                  <i class="fab fa-youtube"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Animals</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>When your pet is missing</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Recently found</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>How to adopt?</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Pets for adoption</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Material gifts</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Help with walks</a>
+              </li>
+              <li class="mb-2">
+                <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Volunteer activities</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Assistance</h5>
+  
+            <ul class="list-unstyled">
+              <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Sitemap</a>
+              </li>
+              <li class="mb-2">
+                    <a href="#!" class="text-white"><i class="fas fa-paw pe-3"></i>Contact</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 col-md-6 mb-4 mb-md-0">
+            <h5 class="text-uppercase mb-4">Contact</h5>
+  
+            <ul class="list-unstyled">
+              <li>
+                <p><i class="fas fa-map-marker-alt pe-2"></i>Cantile-Isugan Rd, Purok Maabi, Abihon</p>
+              </li>
+              <li>
+                <p><i class="fas fa-phone pe-2"></i>0919 074 0320</p>
+              </li>
+              <li>
+                <p><i class="fas fa-envelope pe-2 mb-0"></i>info@dumagueteanimalsanctuary.com</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2)">
+        Copyright &copy; 2023 Dumaguete Animal Sanctuary | Made by Jean Aldous Necesito
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <script>
+      document.addEventListener('DOMContentLoaded', function () {
+          const filterButton = document.querySelector('#filterButton');
+          filterButton.addEventListener('click', filterPets);
+      });
+    
+      function filterPets() {
+    // Get selected personality attributes
+    const selectedAttributes = Array.from(document.querySelectorAll('.personality:checked')).map(checkbox => checkbox.value);
+
+    // Hide all pets
+    const allPets = document.querySelectorAll('.col-md');
+    allPets.forEach(pet => {
+        pet.style.display = 'none';
+    });
+
+    // Filter pets based on selected attributes
+    const pets = document.querySelectorAll('.col-md .card');
+    pets.forEach(pet => {
+        const petAttributes = pet.querySelector('img').getAttribute('data-attributes').split(' ');
+        const isVisible = selectedAttributes.every(attr => petAttributes.includes(attr));
+
+        // Toggle visibility
+        if (isVisible) {
+            pet.closest('.col-md').style.display = 'block';
+        }
+    });
+
+    // If no pets match the filter, you might want to display a message or take some other action
+    const visiblePets = document.querySelectorAll('.col-md[style="display: block;"]');
+    if (visiblePets.length === 0) {
+        // Display a message or take another action
+    }
+}
+
+    </script>    
+  </body>
+</html>
