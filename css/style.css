@@ -1,3 +1,8 @@
+body
+{
+    font-family: font;
+}
+
 .backgroundphoto
 {
     background-image: url('/images/Headerphoto.jpg');
@@ -50,6 +55,50 @@
 }
 
 
+.survey {
+    background-color: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    margin-top: 50px;
+}
+
+.question {
+    font-size: 22px;
+    font-weight: bold;
+    color: #343a40;
+}
+
+.options {
+    margin-top: 15px;
+}
+
+.checkbox-label {
+    margin-right: 25px;
+    font-size: 16px;
+    color: #495057;
+}
+
+#filterButton {
+    margin-top: 25px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: bold;
+    background-color: #007bff;
+    border: none;
+    border-radius: 8px;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+#filterButton:hover {
+    background-color: #0056b3;
+}
+
+@font-face {
+    font-family: font;
+    src: url(https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap);
+  }
 
 @keyframes fade
 {

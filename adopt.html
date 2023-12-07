@@ -30,34 +30,90 @@
         </div>
     </nav>
 
-    <div class="container">
-      <div class="col-12 text-center mt-4">
-        <label>Filter by Attributes: </label>
-        <input type="checkbox" class="personality" value="friendly"> Friendly
-        <input type="checkbox" class="personality" value="energetic"> Energetic
-        <input type="checkbox" class="personality" value="shy"> Shy
-        <input type="checkbox" class="personality" value="white"> White
-        <input type="checkbox" class="personality" value="brown"> Brown
-        <input type="checkbox" class="personality" value="black"> Black
-        <input type="checkbox" class="personality" value="bold"> Bold
-        <input type="checkbox" class="personality" value="curious"> Curious
-        <input type="checkbox" class="personality" value="gentle"> Gentle
-        <input type="checkbox" class="personality" value="quiet"> Quiet
-        <input type="checkbox" class="personality" value="playful"> Playful
-        <input type="checkbox" class="personality" value="active"> Active
-        <input type="checkbox" class="personality" value="sweet"> Sweet
-        <input type="checkbox" class="personality" value="stripped"> Stripped
+    <section class="bg-dark text-white p-5 p-lg-0 pt-lg-5 text-center text-sm-start" id="homeheader">
+      <div class="container">
+          <div class="d-sm-flex align-items-center justify-content-between">
+              <div>
+                  <h1>Let Us Help You Find Your<span class="text-warning"> Best Friend</span></h1>
+                  <p class="lead my-4">
+                    This page helps you find you soon-to-be bestfriend for a long time,
+                    Please answer the short survey below to find the one for you!
+                  </p>
+              </div>
+              <img class="img-fluid w-50 d-none d-sm-block" src="images/adopt/adopt.png" alt="Guy with Laundry" title="Guy with Laundry"/>
+          </div>
       </div>
-      <button id="filterButton" class="btn btn-primary" type="button">Filter</button>
+  </section>
+
+    <div class="container survey">
+      <div class="justify-content-center text-center">
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">I am _____, when meeting new people.</p>
+          <input type="checkbox" class="personality" value="friendly"> Friendly
+          </br>
+          <input type="checkbox" class="personality" value="shy"> Shy
+          </br>
+          <input type="checkbox" class="personality" value="quiet"> Quiet
+        </div>
+
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">When making decisions to new situations, I usually take a _____ approach.</p>
+          <input type="checkbox" class="personality" value="bold"> Bold
+          </br>
+          <input type="checkbox" class="personality" value="curious"> Curious
+        </div>
+
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">I usually like my coffee _____ in the morning.</p>
+          <input type="checkbox" class="personality" value="white"> White
+          </br>
+          <input type="checkbox" class="personality" value="brown"> Brown
+          </br>
+          <input type="checkbox" class="personality" value="black"> Black
+        </div>
+
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">I'm usually _____ in the morning.</p>
+          <input type="checkbox" class="personality" value="active"> Active
+          </br>
+          <input type="checkbox" class="personality" value="energetic"> Energetic
+        </div>
+
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">I'm usually _____ in the morning.</p>
+          <input type="checkbox" class="personality" value="active"> Active
+          </br>
+          <input type="checkbox" class="personality" value="energetic"> Energetic
+        </div>
+
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">I'm usually _____ towards children.</p>
+          <input type="checkbox" class="personality" value="gentle"> Gentle
+          </br>
+          <input type="checkbox" class="personality" value="playful"> Playful
+        </div>
+
+        <div class="mt-5 mb-5">
+          <p class="card-text lead">I'm usually get _____ donuts.</p>
+          <input type="checkbox" class="personality" value="sweet"> Sweet
+          </br>
+          <input type="checkbox" class="personality" value="stripped"> Stripped
+          </br>
+          <input type="checkbox"> Filled
+        </div>
+        <button id="filterButton" class="btn btn-primary text-white" type="button">Submit</button>
+      </div>
     </div>
 
       <div class="container mt-0 mb-5">
+        <h2 class="text-center display-1 text-dark mt-5">Our Rescues</h2>
+        <div class="divider py-1 bg-dark rounded"></div>
         <div class="row text-center g-3">
           <div class="col-md">
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Alice.png" class="card-img-top p-4" alt="Alice" data-attributes="friendly white shy">
                 <div class="card-body">
-                  <p class="card-text">Alice</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Alice" class="pet-link text-black">Alice</a></p>
                 </div>
               </div>
           </div>
@@ -65,7 +121,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Alix.png" class="card-img-top p-4" alt="Alix" data-attributes="energetic white sweet">
                 <div class="card-body">
-                  <p class="card-text">Alix</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Alix" class="pet-link text-black">Alix</a></p>
                 </div>
               </div>
           </div>
@@ -73,7 +129,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Amelia.png" class="card-img-top p-4" alt="Amelia" data-attributes="shy brown bold">
                 <div class="card-body">
-                  <p class="card-text">Amelia</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Amelia" class="pet-link text-black">Amelia</a></p>
                 </div>
               </div>
           </div>
@@ -81,7 +137,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Annie.png" class="card-img-top p-4" alt="Annie" data-attributes="shy black sweet">
                 <div class="card-body">
-                  <p class="card-text">Annie</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Annie" class="pet-link text-black">Annie</a></p>
                 </div>
               </div>
           </div>
@@ -89,7 +145,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Bailey.png" class="card-img-top p-4" alt="Bailey" data-attributes="shy white curious">
                 <div class="card-body">
-                  <p class="card-text">Bailey</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Bailey" class="pet-link text-black">Bailey</a></p>
                 </div>
               </div>
           </div>
@@ -97,7 +153,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Beauty.png" class="card-img-top p-4" alt="Beauty" data-attributes="gentle black quiet">
                 <div class="card-body">
-                  <p class="card-text">Beauty</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Beauty" class="pet-link text-black">Beauty</a></p>
                 </div>
               </div>
           </div>
@@ -105,7 +161,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Bella.png" class="card-img-top p-4" alt="Bella" data-attributes="playful black friendly">
                 <div class="card-body">
-                  <p class="card-text">Bella</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Bella" class="pet-link text-black">Bella</a></p>
                 </div>
               </div>
           </div>
@@ -113,7 +169,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Betty.png" class="card-img-top p-4" alt="Betty" data-attributes="friendly black white active">
                 <div class="card-body">
-                  <p class="card-text">Betty</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Betty" class="pet-link text-black">Betty</a></p>
                 </div>
               </div>
           </div>
@@ -121,7 +177,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Brownie.png" class="card-img-top p-4" alt="Brownie" data-attributes="sweet brown friendly">
                 <div class="card-body">
-                  <p class="card-text">brownie</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Brownie" class="pet-link text-black">Brownie</a></p>
                 </div>
               </div>
           </div>
@@ -129,7 +185,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Cardo.png" class="card-img-top p-4" alt="Cardo" data-attributes="sweet brown friendly">
                 <div class="card-body">
-                  <p class="card-text">Cardo</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Cardo" class="pet-link text-black">Cardo</a></p>
                 </div>
               </div>
           </div>
@@ -137,7 +193,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Carson.png" class="card-img-top p-4" alt="Carson" data-attributes="gentle brown friendly">
                 <div class="card-body">
-                  <p class="card-text">Carson</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Carson" class="pet-link text-black">Carson</a></p>
                 </div>
               </div>
           </div>
@@ -145,7 +201,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Charlie.png" class="card-img-top p-4" alt="Charlie" data-attributes="shy brown friendly">
                 <div class="card-body">
-                  <p class="card-text">Charlie</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Charlie" class="pet-link text-black">Charlie</a></p>
                 </div>
               </div>
           </div>
@@ -153,7 +209,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Cinderella.png" class="card-img-top p-4" alt="Cinderella" data-attributes="gentle brown friendly">
                 <div class="card-body">
-                  <p class="card-text">Cinderella</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Cinderella" class="pet-link text-black">Cinderella</a></p>
                 </div>
               </div>
           </div>
@@ -161,7 +217,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Cleo.png" class="card-img-top p-4" alt="Cleo" data-attributes="active brown friendly">
                 <div class="card-body">
-                  <p class="card-text">Cleo</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Cleo" class="pet-link text-black">Cleo</a></p>
                 </div>
               </div>
           </div>
@@ -169,7 +225,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Daisy.png" class="card-img-top p-4" alt="Daisy" data-attributes="energetic brown friendly">
                 <div class="card-body">
-                  <p class="card-text">Daisy</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Daisy" class="pet-link text-black">Daisy</a></p>
                 </div>
               </div>
           </div>
@@ -177,7 +233,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Dan.png" class="card-img-top p-4" alt="Dan" data-attributes="gentle white quiet">
                 <div class="card-body">
-                  <p class="card-text">Dan</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Dan" class="pet-link text-black">Dan</a></p>
                 </div>
               </div>
           </div>
@@ -185,7 +241,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Dash.png" class="card-img-top p-4" alt="Dash" data-attributes="curious brown energetic">
                 <div class="card-body">
-                    <p class="card-text">Dash</p>
+                    <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Dash" class="pet-link text-black">Dash</a></p>
                 </div>
             </div>
         </div>
@@ -193,7 +249,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Davey.png" class="card-img-top p-4" alt="Davey" data-attributes="curious white gentle">
                 <div class="card-body">
-                  <p class="card-text">Davey</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Davey" class="pet-link text-black">Davey</a></p>
                 </div>
               </div>
           </div>
@@ -201,7 +257,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Dora.png" class="card-img-top p-4" alt="Dora" data-attributes="curious brown shy">
                 <div class="card-body">
-                  <p class="card-text">Dora</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Dora" class="pet-link text-black">Dora</a></p>
                 </div>
               </div>
           </div>
@@ -209,7 +265,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Edith.png" class="card-img-top p-4" alt="Edith" data-attributes="gentle white friendly">
                 <div class="card-body">
-                    <p class="card-text">Edith</p>
+                    <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Edith" class="pet-link text-black">Edith</a></p>
                 </div>
             </div>
         </div>
@@ -217,7 +273,7 @@
           <div class="card" style="width: 18rem;">
               <img src="images/dogs/adopt/Eleanor.png" class="card-img-top p-4" alt="Eleanor" data-attributes="sweet black friendly">
               <div class="card-body">
-                  <p class="card-text">Eleanor</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Elenor" class="pet-link text-black">Elenor</a></p>
               </div>
           </div>
       </div>
@@ -225,7 +281,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Elf.png" class="card-img-top p-4" alt="Elf" data-attributes="sweet white friendly">
                 <div class="card-body">
-                  <p class="card-text">Elf</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Elf" class="pet-link text-black">Elf</a></p>
                 </div>
               </div>
           </div>
@@ -233,7 +289,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Ella.png" class="card-img-top p-4" alt="Ella" data-attributes="curious brown shy">
                 <div class="card-body">
-                  <p class="card-text">Ella</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Ella" class="pet-link text-black">Ella</a></p>
                 </div>
               </div>
           </div>
@@ -241,7 +297,7 @@
             <div class="card" style="width: 18rem;"> 
                 <img src="images/dogs/adopt/Freddy.png" class="card-img-top p-4" alt="Freddy" data-attributes="friendly brown stripped shy">
                 <div class="card-body">
-                  <p class="card-text">Freddy</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Freddy" class="pet-link text-black">Freddy</a></p>
                 </div>
               </div>
           </div>
@@ -249,7 +305,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Fury.png" class="card-img-top p-4" alt="Fury" data-attributes="curious brown sweet">
                 <div class="card-body">
-                  <p class="card-text">Fury</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Fury" class="pet-link text-black">Fury</a></p>
                 </div>
               </div>
           </div>
@@ -257,7 +313,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Ginny.png" class="card-img-top p-4" alt="Ginny" data-attributes="sweet white friendly">
                 <div class="card-body">
-                  <p class="card-text">Ginny</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Ginny" class="pet-link text-black">Ginny</a></p>
                 </div>
               </div>
           </div>
@@ -265,7 +321,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/harry.png" class="card-img-top p-4" alt="Harry" data-attributes="shy white curious">
                 <div class="card-body">
-                  <p class="card-text">Harry</p>
+                  <p class="card-text"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Harry" class="pet-link text-black">Harry</a></p>
                 </div>
               </div>
           </div>
@@ -273,7 +329,7 @@
             <div class="card" style="width: 18rem;">
                 <img src="images/dogs/adopt/Katie.png" class="card-img-top p-4" alt="Katie" data-attributes="sweet white shy">
                 <div class="card-body">
-                  <p class="card-text">Katie</p>
+                  <p class="card-text text-black"><i class="bi bi-caret-right-fill"></i><a href="contact.html?pet=Katie" class="pet-link text-black">Katie</a></p>
                 </div>
               </div>
           </div>
@@ -370,12 +426,12 @@
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <script>
-      document.addEventListener('DOMContentLoaded', function () {
-          const filterButton = document.querySelector('#filterButton');
-          filterButton.addEventListener('click', filterPets);
-      });
-    
-      function filterPets() {
+document.addEventListener('DOMContentLoaded', function () {
+    const filterButton = document.querySelector('#filterButton');
+    filterButton.addEventListener('click', filterPets);
+});
+
+function filterPets() {
     // Get selected personality attributes
     const selectedAttributes = Array.from(document.querySelectorAll('.personality:checked')).map(checkbox => checkbox.value);
 
@@ -385,11 +441,19 @@
         pet.style.display = 'none';
     });
 
+    // If no attributes are selected, show all pets
+    if (selectedAttributes.length === 0) {
+        allPets.forEach(pet => {
+            pet.style.display = 'block';
+        });
+        return;
+    }
+
     // Filter pets based on selected attributes
     const pets = document.querySelectorAll('.col-md .card');
     pets.forEach(pet => {
         const petAttributes = pet.querySelector('img').getAttribute('data-attributes').split(' ');
-        const isVisible = selectedAttributes.every(attr => petAttributes.includes(attr));
+        const isVisible = selectedAttributes.some(attr => petAttributes.includes(attr));
 
         // Toggle visibility
         if (isVisible) {
